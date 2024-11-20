@@ -1,24 +1,31 @@
 package com.projetovoltz.controllers;
 
+import com.projetovoltz.models.Cliente;
+import com.projetovoltz.services.ClienteService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 
 @RestController
 @RequestMapping("/clientes")
 public class ClienteController {
 
-    @GetMapping
-    public String listarClientes() {
-        return "Listagem de clientes funcionando!";
-    }
+    @Autowired
+    private ClienteService clienteService;
 
-    @PostMapping
-    public String criarCliente() {
-        return "Cliente criado com sucesso!";
+    @GetMapping
+    public List<Cliente> listarClientes() {
+        return clienteService.listarTodos();
     }
 
     @GetMapping("/{id}")
-    public String buscarClientePorId(@PathVariable Long id) {
-        return "Buscando cliente com ID: " + id;
+    public Cliente buscarClientePorId(@PathVariable Long id) {
+        return clienteService.buscarPorId(id);
+    }
+
+    @PostMapping
+    public Cliente criarCliente(@RequestBody Cliente cliente) {
+        return clienteService.criar(cliente);
     }
 }
