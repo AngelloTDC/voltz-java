@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/clientes")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://voltz-eta.vercel.app"})
 public class ClienteController {
 
     @Autowired
