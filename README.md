@@ -39,6 +39,15 @@
     
   - Para mais duvidas acesse o repositório de Python.
 
+---
+
+### Contato para falar sobre o projeto
+
+- **`EMAIL:`** voltzenergia01@gmail.com
+
+- **`TELEFONE`**  (11) 98683-9381
+
+
 
 
   
