@@ -23,21 +23,21 @@
 - **Página na Web (Vercel):**  
   [https://voltz-eta.vercel.app](https://voltz-eta.vercel.app)
 
-  ---
+---
 
-  ## Função importante para o Banco MySQL (JAVA)
+## Função importante para o Banco MySQL (JAVA)
 
-  - Em `application.properties` verifique o ROOT e a SENHA
-  - para que esteja de acordo com o MySQL local (banco de dados local).
+- Em `application.properties` verifique o ROOT e a SENHA
+- para que esteja de acordo com o MySQL local (banco de dados local).
 
-  ---
+---
 
-  ## Função importante para o banco MySQL (Python)
+## Função importante para o banco MySQL (Python)
 
-  - Em `crud.py` é necessário mudar o ROOT e a SENHA 
-  - para que esteja de acordo com o MySQL local (banco de dados local).
+- Em `crud.py` é necessário mudar o ROOT e a SENHA 
+- para que esteja de acordo com o MySQL local (banco de dados local).
     
-  - Para mais duvidas acesse o repositório de Python.
+- Para mais duvidas acesse o repositório de Python.
 
 ---
 
@@ -47,7 +47,3 @@
 
 - **`TELEFONE`**  (11) 98683-9381
 
-
-
-
-  
